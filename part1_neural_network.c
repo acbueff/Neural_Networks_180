@@ -16,26 +16,26 @@
 #include <cstdlib>
 using namespace std;
 
-#define NumOfCols    3       /* number of layers +1  i.e, include input layer */
-#define NumOfRows    4       /* max number of rows net +1, last is bias node  */
+#define NumOfCols    4       /* number of layers +1  i.e, include input layer */
+#define NumOfRows    10       /* max number of rows net +1, last is bias node  */
 #define NumINs       3       /* number of inputs, not including bias node     */
 #define NumOUTs      2       /* number of outputs, not including bias node    */
 #define LearningRate 0.2     /* most books suggest 0.3                        */
-#define Criteria     0.05    /* all outputs must be within this to terminate  */
-#define TestCriteria 0.1     /* all outputs must be within this to generalize */
-#define MaxIterate   1000000  /* maximum number of iterations                */
-#define ReportIntv   101     /* print report every time this many cases done*/
+#define Criteria     0.4    /* all outputs must be within this to terminate  */
+#define TestCriteria 0.8     /* all outputs must be within this to generalize */
+#define MaxIterate   20000000  /* maximum number of iterations                */
+#define ReportIntv   1000000   /* print report every time this many cases done*/
 #define Momentum     0.9     /* momentum constant                             */
-#define TrainCases   17      /* number of training cases        */
-#define TestCases    6       /* number of test cases            */
+#define TrainCases   36      /* number of training cases        */
+#define TestCases    8       /* number of test cases            */
 // network topology by column ------------------------------------
 #define NumNodes1    4       /* col 1 - must equal NumINs+1     */
-#define NumNodes2    4       /* col 2 - hidden layer 1, etc.    */
-#define NumNodes3    2       /* output layer must equal NumOUTs */
-#define NumNodes4    0       /*                                 */
+#define NumNodes2    10       /* col 2 - hidden layer 1, etc.    */
+#define NumNodes3    10       /* output layer must equal NumOUTs */
+#define NumNodes4    2       /*                                 */
 #define NumNodes5    0       /* note: layers include bias node  */
 #define NumNodes6    0
-#define TrainFile    "part1Training.DAT"  /* file containing training data */
+#define TrainFile    "part1TrainB.DAT"  /* file containing training data */
 #define TestFile     "part1Testing.DAT"   /* file containing testing data  */
 
 int NumRowsPer[NumOfRows];  /* number of rows used in each column incl. bias */

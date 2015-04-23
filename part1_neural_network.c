@@ -24,10 +24,10 @@ using namespace std;
 #define Criteria     0.4    /* all outputs must be within this to terminate  */
 #define TestCriteria 0.8     /* all outputs must be within this to generalize */
 #define MaxIterate   20000000  /* maximum number of iterations                */
-#define ReportIntv   1000000   /* print report every time this many cases done*/
+#define ReportIntv   100000   /* print report every time this many cases done*/
 #define Momentum     0.9     /* momentum constant                             */
 #define TrainCases   36      /* number of training cases        */
-#define TestCases    8       /* number of test cases            */
+#define TestCases    34       /* number of test cases            */
 // network topology by column ------------------------------------
 #define NumNodes1    4       /* col 1 - must equal NumINs+1     */
 #define NumNodes2    10       /* col 2 - hidden layer 1, etc.    */
@@ -35,7 +35,7 @@ using namespace std;
 #define NumNodes4    2       /*                                 */
 #define NumNodes5    0       /* note: layers include bias node  */
 #define NumNodes6    0
-#define TrainFile    "part1TrainB.DAT"  /* file containing training data */
+#define TrainFile    "part1Training.DAT"  /* file containing training data */
 #define TestFile     "part1Testing.DAT"   /* file containing testing data  */
 
 int NumRowsPer[NumOfRows];  /* number of rows used in each column incl. bias */

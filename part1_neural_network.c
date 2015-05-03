@@ -16,6 +16,8 @@
 #include <cstdlib>
 using namespace std;
 
+
+//TEST
 #define NumOfCols    5       /* number of layers +1  i.e, include input layer */
 #define NumOfRows    22       /* max number of rows net +1, last is bias node  */
 #define NumINs       3       /* number of inputs, not including bias node     */

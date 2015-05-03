@@ -20,7 +20,7 @@ using namespace std;
 #define NumOfRows    10       /* max number of rows net +1, last is bias node  */
 #define NumINs       2       /* number of inputs, not including bias node     */
 #define NumOUTs      2       /* number of outputs, not including bias node    */
-#define LearningRate 0.3     /* most books suggest 0.3                        */
+#define LearningRate 0.2     /* most books suggest 0.3                        */
 #define Criteria     2.0    /* all outputs must be within this to terminate  */
 #define TestCriteria 4.0     /* all outputs must be within this to generalize */
 #define MaxIterate   42000000  /* maximum number of iterations                */
